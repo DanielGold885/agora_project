@@ -123,7 +123,3 @@ class FormPage(BasePage):
         email_input = self.driver.find_element(By.ID, "userEmail")
         border_color = email_input.value_of_css_property("border-color")
         return is_red_border(border_color)
-
-
-
-
