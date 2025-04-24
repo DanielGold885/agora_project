@@ -66,7 +66,6 @@ class FormPage(BasePage):
     def select_hobby(self, hobby="Reading"):
         if hobby.lower() == "reading":
             self.click(self.HOBBIES_READING)
-        # Add more hobbies if needed
 
     def upload_file(self, filename):
         path = self.get_asset_path(filename)
@@ -88,6 +87,7 @@ class FormPage(BasePage):
     def get_confirmation_text(self):
         return self.get_text(self.CONFIRMATION_HEADER)
 
+    # --- Flows ---
     def fill_form_valid_data(self):
         self.fill_first_name("John")
         self.fill_last_name("Doe")
