@@ -10,7 +10,7 @@ git clone https://github.com/yourusername/agora_project.git
 cd agora_project
 ```
 
-### 2. Clone the repo
+### 2. Initialize virtual env
 ```bash
 python -m venv venv
 venv\Scripts\activate  # for Windows
