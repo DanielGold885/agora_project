@@ -19,4 +19,6 @@ def driver(request):
 
 @pytest.fixture
 def form_page(driver):
-    return FormPage(driver)
+    page = FormPage(driver)
+    page.load()
+    return page
