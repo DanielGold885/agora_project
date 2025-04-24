@@ -113,7 +113,7 @@ class FormPage(BasePage):
 
     def fill_form_invalid_email(self):
         self.fill_email("not-an-email")
-        self.fill_first_name("John")  # enables the submit button
+        self.fill_first_name("John")
         self.scroll_to_element((By.ID, "submit"))
         self.click((By.ID, "submit"))
         self.scroll_to_element((By.ID, "userEmail"))

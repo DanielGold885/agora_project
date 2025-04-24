@@ -20,5 +20,5 @@ def driver(request):
 @pytest.fixture
 def form_page(driver):
     page = FormPage(driver)
-    page.load()  # ✅ navigate to the form page
+    page.load()
     return page
